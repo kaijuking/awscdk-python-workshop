@@ -36,5 +36,6 @@ class AwscdkPythonWorkshopStack(core.Stack):
         TableViewer(
             self, 'ViewHitCounter',
             title = 'Hello Hits',
-            table=hello_with_counter.table
+            table=hello_with_counter.table,
+            sort_by="-hits"
         )
